@@ -1,3 +1,7 @@
-#suggestions{
+#suggestions {
   display: none;
+}
+
+#selection {
+  color: green;
 }

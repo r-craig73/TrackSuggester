@@ -3,6 +3,9 @@ $(document).ready(function() {
   var myApplication = $("#favoriteApp").val();
   var myCompany = $("input:radio[name=companySize]:checked").val();
   var myOperatingSystem = $("input:radio[name=operatingSystem]:checked").val();
-  $("#suggestion").show();
+
+  $("#submit").click(function() {
+  $("#suggestions").fadeIn();
+  });
 
 });

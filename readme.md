@@ -10,7 +10,7 @@
 ### A webpage suggesting a programming track to future students.
 
 ## Detailed Description
-### Students will input information and answer several questions.  The website will use HTML, bootstrap, jQuery, and JavaScript to return the suggested track.
+### Students will input information and answer several questions to compare three different programming tracks.  The website will use HTML, bootstrap, jQuery, and JavaScript to return the recommended track.
 
 ## Known Bugs
 ### TBD

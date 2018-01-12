@@ -16,9 +16,25 @@ $(document).ready(function() {
   alert(myApp);
   alert(myCompany);
   alert(myOperatingSystem);
+
+  if (rubyTrack(myApp, myCompany, myOperatingSystem)) {
+    $(".result1").text("Ruby/Rails");
+  }
+  else  {
+    $(".result1").text("No");
+  }
+
+  // add branch cases here
   event.preventDefault();
   alert("End");
   });
 
+  function rubyTrack (app, company, oSystem) {
+    if (company === "smallCompany") {
+      return true;
+    } else {
+      return false;
+    }
+  };
 
 });

@@ -10,87 +10,85 @@
   </head>
   <body>
     <div class="container">
-      <h1>Track Suggester</h1>
-      <h3>Please answer the questions below to determine your program track between...</h3>
-        <ol>
-          <li>Ruby/Rails</li>
-          <li>C#/.NET</li>
-          <li>Java/Android</li>
-        </ol>
-        <br>
-      <label for="name1">What is your name?</label>
+    <h1>Track Suggester</h1>
+    <h3>Please answer the questions below to determine your program track comparing...</h3>
+      <ol>
+        <li>Ruby/Rails</li>
+        <li>C#/.NET</li>
+        <li>Java/Android</li>
+      </ol>
+      <br>
+    <form id="formOne">
+      <h4><label for="name1">What is your first name?</label></h4>
       <input id="name1" class="form-control" type="text" required>
+    </form>
+      <br>
+      <br>
+    <h4>What type of application would you like to create?</h4>
+    <select class="form-control" id="favoriteApp">
+      <option value="webApps">Web applications</option>
+      <option value="businessApps">Business applications</option>
+      <option value="anyApps">Any applications</option>
+    </select>
+      <br>
+      <br>
+      <br>
+      <br>
+    <h4>What is your preferred company size?</h4>
+    <div class="radio">
+      <label>
+        <input type="radio" name="companySize" value="smallCompany">
+          Small, start-up company
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="companySize" value="mediumCompany">
+          Medium size, enterprise company
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="companySize" value="largeCompany">
+          Large corporation
+      </label>
+    </div>
         <br>
         <br>
-      <h4>What type of application would you like to create?</h4>
-      <select class="form-control" id="favoriteApp">
-        <option value="">Web applications</option>
-        <option value="">Business applications</option>
-        <option value="">Any applications</option>
-      </select>
-        <br>
-        <br>
-        <br>
-        <br>
-      <h4>What is your preferred company size?</h4>
-      <div class="radio">
-        <label>
-          <input type="radio" name="companySize" value="smallCompany">
-            Small, start-up company
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="companySize" value="mediumCompany">
-            Medium size, enterprise company
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="companySize" value="largeCompany">
-            Large corporation
-        </label>
-      </div>
-        <br>
-        <br>
-      <h4>What is your favorite operating system?</h4>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operatingSystem" value="any">
-            Any
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operatingSystem" value="apple">
-            Apple
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operatingSystem" value="windows">
-            Windows
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="companySize" value="android">
-            Android
-        </label>
-      </div>
-        <br>
-      <button type="button" name="button" id="submit">Submit!</button>
-        <br>
+    <h4>What is your favorite operating system?</h4>
+    <div class="radio">
+      <label>
+        <input type="radio" name="operatingSystem" value="any">
+          Any
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="operatingSystem" value="apple">
+          Apple
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="operatingSystem" value="windows">
+          Windows
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="companySize" value="android">
+          Android
+      </label>
+    </div>
+      <br>
+    <button type="button" name="button" id="submit">Submit!</button>
+      <br>
       <div id="suggestions">
         <br>
-      <h4>Track Suggestion</h4>
-        <ul>
-          <li>Ruby/Rails</li>
-          <li>C#/.NET</li>
-          <li>Java/Android</li>
-        </ul>
-        <h4><span id="myName"></span>, Track Suggester recommends....</h4>
-        <h4 id="selection">tbd</h4>
+      <h3>Track Suggestion</h3>
+        <h4><span class="name1"></span>, Track Suggester recommends....</h4>
+          <br>
+        <h3><span class="result1"></span> Track!</h3>
       </div>
     </div>
   </body>

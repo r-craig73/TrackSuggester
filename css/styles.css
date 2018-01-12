@@ -2,6 +2,6 @@
   display: none;
 }
 
-#selection {
+.name1, .result1 {
   color: green;
 }

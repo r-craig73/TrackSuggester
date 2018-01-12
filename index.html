@@ -11,19 +11,88 @@
   <body>
     <div class="container">
       <h1>Track Suggester</h1>
-      <p>Insert name form</p>
-      <p>Insert coding preference (button of form)</p>
+      <h3>Please answer the questions below to determine your program track.</h3>
+      <label for="name1">What is your name?</label>
+      <input id="name1" class="form-control" type="text" required>
+      <br>
+      <br>
 
-    </div>
+      <p>What type of application would you like to create?</p>
+      <select class="form-control" id="favoriteApp">
+        <option value="">Web applications</option>
+        <option value="">Business applications</option>
+        <option value="">Any applications</option>
+      </select>
+      <br>
+      <br>
+      <br>
+      <br>
 
-    <div id="suggestion">
-      <h1>Track Suggestions</h1>
+      <p>What is your preferred company size?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="companySize" value="smallCompany">
+              Small, start-up company
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="companySize" value="mediumCompany">
+              Medium size, enterprise company
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="companySize" value="largeCompany">
+              Large corporation
+          </label>
+        </div>
+        <br>
+        <br>
+
+    <p>What is your favorite operating system?</p>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operatingSystem" value="any">
+            Any
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operatingSystem" value="apple">
+            Apple
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operatingSystem" value="windows">
+            Windows
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="companySize" value="android">
+            Android
+        </label>
+      </div>
+      <br>
+
+    <button type="button" name="button" id="submit">Submit!</button>
+    <br>
+
+    <div id="suggestions">
+      <br>
+    <h4>Track Suggestion</h4>
       <ol>
         <ul>Ruby/Rails</ul>
-        <ul>CSS/Design</ul>
         <ul>C#/.NET</ul>
         <ul>Java/Android</ul>
       </ol>
     </div>
+
+
+  </div>
+
+
   </body>
 </html>

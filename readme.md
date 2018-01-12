@@ -1,8 +1,10 @@
 # Track Suggestion
 
-### by Ron Craig Version 1.01, 01/19/2018
+### by Ron Craig Version 1.01, 01/12/2018
 
 ## GitHub link: TBD
+
+## GitHub repository link: https://github.com/r-craig73/TrackSuggester
 
 ## Brief Description
 ### A webpage suggesting a programming track to future students.

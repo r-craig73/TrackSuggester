@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  alert("Beginning");
 
   $("#submit").click(function(event) {
   var myName = $("input#name1").val();
@@ -12,25 +11,41 @@ $(document).ready(function() {
   $("input:radio[name=companySize]:checked").text(myCompany);
   $("input:radio[name=operatingSystem]:checked").text(myOperatingSystem);
   $("#suggestions").fadeIn();
-  alert(myName);
-  alert(myApp);
-  alert(myCompany);
-  alert(myOperatingSystem);
 
   if (rubyTrack(myApp, myCompany, myOperatingSystem)) {
-    $(".result1").text("Ruby/Rails");
+    $(".result1").text("Ruby/Rails track!");
+  }
+  else if (javaTrack(myApp, myCompany, myOperatingSystem)) {
+    $(".result1").text("Java/Android track!");
+  }
+  else if (cTrack(myApp, myCompany, myOperatingSystem)) {
+    $(".result1").text("C#/.NET track!");
   }
   else  {
-    $(".result1").text("No");
+    $(".result1").text("No track!");
   }
-
-  // add branch cases here
   event.preventDefault();
-  alert("End");
+
   });
 
   function rubyTrack (app, company, oSystem) {
     if (company === "smallCompany") {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  function javaTrack (app, company, oSystem) {
+    if ((oSystem === "android" && company === "mediumCompany") || (oSystem === "android" && company === "largeCompany")) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  function cTrack (app, company, oSystem) {
+    if ((oSystem === "windows" && company === "largeCompany" || "mediumCompany") || (app === "businessApps" || "webApps")) {
       return true;
     } else {
       return false;

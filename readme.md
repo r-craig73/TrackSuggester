@@ -1,8 +1,8 @@
 # Track Suggestion
 
-### by Ron Craig Version 1.01, 01/12/2018
+### by Ron Craig Version 1.05, 01/12/2018
 
-## GitHub link: TBD
+## GitHub link: https://r-craig73.github.io/TrackSuggester/
 
 ## GitHub repository link: https://github.com/r-craig73/TrackSuggester
 
@@ -14,5 +14,7 @@
 
 ## Known Bugs
 ### TBD
+
+### Contact: ron.craig@comcast.net
 
 ### Copyright MIT 2018
